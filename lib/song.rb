@@ -7,7 +7,7 @@ class Song
     @artist = nil
   end 
   
-  def new_by_filename(filename)
+  def self.new_by_filename(filename)
     song = Song.new(filename.split(" - ")[0])
     song
   end 
