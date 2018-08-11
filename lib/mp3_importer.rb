@@ -11,7 +11,7 @@ class MP3Importer
   
   def files(path)
     result = []
-    Dir.open(Dir.path).each do |filename|
+    Dir.open(path).each do |filename|
       next if File.directory?(filename)
       result << filename
     end
