@@ -7,8 +7,11 @@ class MP3Importer
     @files = files(path)
   end
   
-  def files
-    
+  def files(path)
+    Dir.open(Dir.path).each do |filename|
+      next if File.directory?(filename)
+      
+    end
   end
   
   def import
