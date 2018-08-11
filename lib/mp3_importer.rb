@@ -20,7 +20,10 @@ class MP3Importer
   end
   
   def import
-    
+    @files.each do |file|
+      song = Song.new(file.split(" - ")[0])
+      
+    end 
   end
   
 end 
