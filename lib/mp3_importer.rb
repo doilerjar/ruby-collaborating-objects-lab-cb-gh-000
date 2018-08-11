@@ -15,7 +15,7 @@ class MP3Importer
       next if File.directory?(filename)
       result << filename
     end
-
+    binding.pry
     result
   end
   
