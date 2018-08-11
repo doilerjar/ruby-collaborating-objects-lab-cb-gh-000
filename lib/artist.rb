@@ -33,6 +33,10 @@ class Artist
     artist
   end 
   
+  def self.all
+    @@all  
+  end 
+  
   def print_songs
     @songs.each {|song| puts "#{song}"}
   end
