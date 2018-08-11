@@ -9,10 +9,6 @@ class MP3Importer
     @files = files(path)
   end
   
-  def path
-    @path
-  end
-  
   def files(path)
     result = []
     Dir.open(Dir.path).each do |filename|
